@@ -1,5 +1,6 @@
 import { Component, tags, router } from "@odoo/owl";
 const Link = router.Link;
+import { NavbarLink } from "./NavbarLink";
 
 const NAVBAR_TEMPLATE = tags.xml/*xml*/ `
 <nav class="navbar navbar-light">
@@ -9,22 +10,22 @@ const NAVBAR_TEMPLATE = tags.xml/*xml*/ `
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
                 <!-- Add "active" class when you're on that page" -->
-                <Link to="'HOME'" class="nav-link">Home</Link>
+                <NavbarLink to="'HOME'" class="nav-link">Home</NavbarLink>
             </li>
             <li class="nav-item">
-                <Link to="'EDITOR'" class="nav-link"><i class="ion-compose"></i> New Post</Link>
+                <NavbarLink to="'EDITOR'" class="nav-link"><i class="ion-compose"></i> New Post</NavbarLink>
             </li>
             <li class="nav-item">
-                <Link to="'SETTINGS'" class="nav-link"><i class="ion-gear-a"></i> Settings</Link>
+                <NavbarLink to="'SETTINGS'" class="nav-link"><i class="ion-gear-a"></i> Settings</NavbarLink>
             </li>
             <li class="nav-item">
-                <Link to="'LOG_IN'" class="nav-link">Sign in</Link>
+                <NavbarLink to="'LOG_IN'" class="nav-link">Sign in</NavbarLink>
             </li>
             <li class="nav-item">
-                <Link to="'REGISTER'" class="nav-link">Sign up</Link>
+                <NavbarLink to="'REGISTER'" class="nav-link">Sign up</NavbarLink>
             </li>
             <li class="nav-item">
-                <Link to="'PROFILE'" class="nav-link">Coding Dodo</Link>
+                <NavbarLink to="'PROFILE'" class="nav-link">Coding Dodo</NavbarLink>
             </li>
         </ul>
     </div>
@@ -32,5 +33,5 @@ const NAVBAR_TEMPLATE = tags.xml/*xml*/ `
 `;
 export class Navbar extends Component {
   static template = NAVBAR_TEMPLATE;
-  static components = { Link };
+  static components = { Link, NavbarLink };
 }
