@@ -75,3 +75,4 @@ export class App extends Component {
 If your are searching for the a project starter with Tailwind and PostCSS:
 
 [https://github.com/Coding-Dodo/OWL-JavaScript-Tailwind-Project-Starter](https://github.com/Coding-Dodo/OWL-JavaScript-Tailwind-Project-Starter)
+# odoo_owl_realWorld
